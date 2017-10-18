@@ -9,7 +9,7 @@
 #' \dontrun{
 #' assert_geocode(12 rue de Rivoli 75001 Paris)}
 #'
-addres_geocode <- function(address){
+address_geocode <- function(address){
   assertthat::assert_that(is.character(address))
   coord <- banR::geocode(address)
   coord <- c(coord[1,16],coord[1,17])
