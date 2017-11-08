@@ -12,7 +12,6 @@
 address_geocode <- function(address){
   assertthat::assert_that(is.character(address))
   coord <- banR::geocode(address)
-  coord <- c(coord[1,16],coord[1,17])
   return(coord)
 
 }
