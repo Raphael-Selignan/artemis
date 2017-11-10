@@ -1,3 +1,6 @@
 devtools::use_data_raw()
 devtools::use_package("assertthat")
 devtools::use_package("banR")
+devtools::use_package("R.utils")
+devtools::use_package("sf")
+
