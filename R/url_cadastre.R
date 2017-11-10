@@ -16,7 +16,7 @@ url_cadastre <- function(city_code,context){
   context <- toString(context)
   dep <- strsplit(context,",")[[1]][1]
   url_basis <- "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/communes"
-  url_end <- paste("cadastre", city_code,"batiments.json.gz", sep = "-")
+  url_end <- paste("cadastre", city_code,"parcelles.json.gz", sep = "-")
   url <- paste(url_basis,dep,city_code,url_end,sep = "/")
   return(url)
 }

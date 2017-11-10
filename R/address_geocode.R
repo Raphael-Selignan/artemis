@@ -12,6 +12,7 @@
 address_geocode <- function(address){
   assertthat::assert_that(is.character(address))
   coord <- banR::geocode(address)
+  coord <- coord[1,]
   return(coord)
 
 }
