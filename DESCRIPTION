@@ -15,4 +15,5 @@ Imports: assertthat,
     R.utils,
     sf,
     leaflet,
-    dplyr
+    dplyr,
+    stringr

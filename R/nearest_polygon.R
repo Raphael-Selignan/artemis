@@ -14,9 +14,9 @@ nearest_polygon <- function(banRmatrix,cadaster_sheet){
   point <- sf::st_point(c(banRmatrix$longitude, banRmatrix$latitude))
   point <- sf::st_sfc(point, crs = 4326)
   UTM_point <- st_transform(point, crs = 32748)
-  UMT_sheet <- cadaster_sheet %>%
+  UTM_sheet <- cadaster_sheet %>%
   st_transform(crs = 32748)
-  distance_matrix <- st_distance(b, matrice2)
+  distance_matrix <- st_distance(UTM_point, UTM_sheet)
   nearest_polygon_reference <- which.min(distance_matrix)
   return(nearest_polygon_reference)
 }

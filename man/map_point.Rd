@@ -4,12 +4,10 @@
 \alias{map_point}
 \title{Loads the information of the parcel and displays it on a map of the parcel using its coordinates}
 \usage{
-map_point(longitude, latitude, information)
+map_point(banRmatrix, information)
 }
 \arguments{
-\item{longitude}{numerical vector}
-
-\item{latitude}{numerical vector}
+\item{banRmatrix}{banR object}
 
 \item{information}{character vector}
 }

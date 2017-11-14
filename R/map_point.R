@@ -1,7 +1,6 @@
 #' Loads the information of the parcel and displays it on a map of the parcel using its coordinates
 #'
-#' @param longitude numerical vector
-#' @param latitude numerical vector
+#' @param banRmatrix banR object
 #' @param information character vector
 #'
 #' @import leaflet
@@ -15,11 +14,11 @@
 #' }
 #'
 #'
-map_point <- function(longitude,latitude,information){
+map_point <- function(banRmatrix,information){
 
-m = leaflet() %>% addTiles()
+m = leaflet::leaflet() %>% leaflet::addTiles()
 ## a map with the default OSM tile layer
 
-m %>% addPopups(longitude, latitude, information)
+m %>% leaflet::addPopups(banRmatrix$longitude, banRmatrix$latitude, information)
 ## Longitude puis latitude
 }
