@@ -17,5 +17,6 @@ load_cadastre_sheet <- function(url,city_code){
   saved_name <- paste("Cadastre.sheet",city_code,"json.gz",sep = ".")
   download.file(url,saved_name)
   cadastre_sheet <- sf::st_read(R.utils::gunzip(saved_name))
+  file.remove(substring(saved_name,1,nchar(saved_name)-3))
   return(cadastre_sheet)
 }
