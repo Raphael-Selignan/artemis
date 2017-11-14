@@ -4,12 +4,12 @@
 \alias{point_feuille}
 \title{Produces the reference of the feuille corresponding to the point}
 \usage{
-point_feuille(banRmatrix, cadaster_sheet_feuilles)
+point_feuille(banRmatrix, cadastre_sheet_feuilles)
 }
 \arguments{
 \item{banRmatrix}{matrix given out by banR}
 
-\item{cadaster_sheet_feuilles}{corresponding cadaster_sheet}
+\item{cadastre_sheet_feuilles}{corresponding cadaster_sheet in dataframe form}
 }
 \value{
 integer
@@ -20,4 +20,5 @@ Produces the reference of the feuille corresponding to the point
 \examples{
 \dontrun{
 point_feuille(geocode_address("youradrress"),feuille_cadaster_sheet.json)}
+
 }

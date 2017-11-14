@@ -9,7 +9,7 @@ nearest_polygon(banRmatrix, cadaster_sheet)
 \arguments{
 \item{banRmatrix}{the banR matrix given by address_geocode}
 
-\item{cadaster_sheet}{the corresponding cadaster sheet}
+\item{cadaster_sheet}{the corresponding cadaster sheet in dataframe form}
 }
 \value{
 integer
@@ -21,4 +21,5 @@ Returns the closes polygon to a long lat point
 \dontrun{
 nearest_polygon(geocode_address("5 rue d'Olivet 75007"),cadaster_sheet_75107)
 }
+
 }
