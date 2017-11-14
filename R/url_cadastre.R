@@ -23,13 +23,16 @@ url_cadastre <- function(city_code,context){
   ## This is the basis of every cadaster url in the official database
   url_basis <- "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/communes"
 
-  ## The URL end with "cadastre/the_city_code/the_type_of_info.json.gz
+  ## The URL end with "cadastre/the_city_code/the_type_of_info
   ## In order to obtain the information, we need both parcelles and feuilles
   type <- c("parcelles","feuilles")
-  url_end <- paste("cadastre", city_code, type, ".json.gz", sep="-")
+  url_end <- paste("cadastre", city_code, type, sep="-")
 
-  ## Pastes the different parts to complete the URL
+  ## Pastes the different parts to complete the URL witout the .json.gz extension
   url <- paste(url_basis, dep, city_code, url_end, sep="/")
+
+  ## Adding the extension
+  url <- paste(url,".json.gz",sep = "")
 
   ## Returns a vector with two different URLS for the parcelles sheet and the feuilles sheet
   return(url)
