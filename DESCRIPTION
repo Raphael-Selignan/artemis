@@ -17,3 +17,6 @@ Imports: assertthat,
     leaflet,
     dplyr,
     stringr
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
