@@ -11,6 +11,8 @@ vignette: >
 
 #ARTEMIS PACKAGE
 
+<img src="https://fthmb.tqn.com/3AFmXdYHbuOYHd1Vd4NwYyjb0Xc=/768x0/filters:no_upscale()/ArtemisBust-56aaad0f5f9b58b7d008d863.jpg" alt="Artemis">
+
 This packages is composed of 8 functions and a shiny app. Although some of the functions can be used separately, most of them are conceived to be used by the shiny app.
 
 The two most important components of the package are thus the app and the function address_to_cadastre.
@@ -37,5 +39,6 @@ So you can understand better how this works without having to take a look at the
 8. Finally, the address_to_cadaster unites all those functions and enables you to obtain the final map with only the address!
 
 Have fun!
+
 
 
