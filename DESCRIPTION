@@ -13,4 +13,6 @@ Imports: assertthat,
     banR,
     rjson,
     R.utils,
-    sf
+    sf,
+    leaflet,
+    dplyr

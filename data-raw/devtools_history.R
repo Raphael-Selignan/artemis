@@ -3,4 +3,5 @@ devtools::use_package("assertthat")
 devtools::use_package("banR")
 devtools::use_package("R.utils")
 devtools::use_package("sf")
-
+devtools::use_package("leaflet")
+devtools::use_package("dplyr")
