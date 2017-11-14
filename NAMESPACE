@@ -2,6 +2,7 @@
 
 export(load_cadastre_sheet)
 export(map_point)
+export(nearest_polygon)
 export(url_cadastre)
 import(R.utils)
 import(assertthat)
