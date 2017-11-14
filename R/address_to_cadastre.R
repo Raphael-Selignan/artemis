@@ -5,8 +5,8 @@
 #' @export
 #'
 #' @examples \dontrun{
-#' address_to_cadaster("3 rue d'Olivet 75007 Paris)}
-address_to_cadaster <- function(address){
+#' address_to_cadastre("3 rue d'Olivet 75007 Paris)}
+address_to_cadastre <- function(address){
   banRmatrix <- address_geocode(address)
   url <- url_cadastre(banRmatrix$citycode,banRmatrix$context)
   matrice <- load_cadastre_sheet(url,banRmatrix$citycode)
