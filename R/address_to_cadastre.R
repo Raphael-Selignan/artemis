@@ -32,5 +32,5 @@ address_to_cadastre <- function(address){
   address_information <- address_info(polygon_ref,feuille_ref,matrice$parcelles,matrice$feuilles)
 
   ## Uses leaflet to show the address and the information obtained
-  map_point(banRmatrix,paste("<h3>",banRmatrix$label,"</h3>",address_information))
+  map_point(banRmatrix,paste("<h4>",banRmatrix$label,"</h4>",address_information))
 }
